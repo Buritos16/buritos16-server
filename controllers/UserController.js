@@ -1,4 +1,4 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import UserModel from "../models/User.js";
 import jwt from "jsonwebtoken";
 import {bot} from "../index.js";

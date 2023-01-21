@@ -36,7 +36,7 @@ mongoose
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: process.env.REMOTE_CLIENT_APP, credentials: true }));
+app.use(cors);
 
 app.post('/auth/login', loginValidation, handleValidationErrors, UserController.login);
 app.post('/auth/register', registerValidation, handleValidationErrors, UserController.register);

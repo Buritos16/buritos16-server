@@ -5,7 +5,6 @@ import {registerValidation, loginValidation} from "./validations.js";
 import {handleValidationErrors, checkAuth} from './utils/index.js'
 import * as UserController from "./controllers/UserController.js";
 import cors from 'cors'
-import dotenv from 'dotenv'
 import {
     setTransactionsBot,
     setWalletBot
@@ -36,7 +35,7 @@ mongoose
 
 const app = express();
 
-dotenv.config()
+
 app.use(express.json());
 app.use(cors());
 

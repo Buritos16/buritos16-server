@@ -14,7 +14,7 @@ import TelegramBot from 'node-telegram-bot-api'
 
 
 
-const token = '5685211993:AAEwWNxV8htbTql77jMKcmQvwWmGr-XfTBk'
+const token = process.env.TELEGRAM_URI
 
 export const bot = new TelegramBot(token, {polling: true})
 
